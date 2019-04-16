@@ -1,11 +1,12 @@
-export interface UpdateEpisodesEvent {
+export interface Event {
   showId: string;
   firstEpisode: number; // episodenumber
   lastEpisode: number; // episodenumber
   episodes: EpisodeInput[];
+  requestStack: string[];
 }
 
-export type UpdateEpisodesResponse = Promise<Boolean>;
+export type Response = Boolean;
 
 export interface EpisodeInput {
   tvdbId: number;

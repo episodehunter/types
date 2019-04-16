@@ -3,4 +3,5 @@ export interface Title {
   name: string;
   followers: number;
   tvdbId: number;
+  lastupdated: number;
 }

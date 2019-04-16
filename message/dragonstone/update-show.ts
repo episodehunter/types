@@ -4,6 +4,7 @@ import { ShowInput } from './show-input';
 export interface Event {
   showId: string;
   showInput: ShowInput;
+  requestStack: string[];
 }
 
-export type Response = Promise<Show | null>;
+export type Response = Show | null;

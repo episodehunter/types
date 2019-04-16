@@ -1,8 +1,9 @@
 import { Show } from '../../dragonstone/show';
 import { ShowInput } from './show-input';
 
-export interface AddShowEvent {
+export interface Event {
   showInput: ShowInput;
+  requestStack: string[];
 }
 
-export type AddShowResponse = Promise<Show>;
+export type Response = Show;
