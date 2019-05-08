@@ -1,9 +1,9 @@
 export enum WatchedEnum {
-  kodiScrobble,
-  kodiSync,
-  checkIn,
-  checkInSeason,
-  plexScrobble
+  kodiScrobble = 0,
+  kodiSync = 1,
+  checkIn = 2,
+  checkInSeason = 3,
+  plexScrobble = 4
 }
 
 export interface WatchedEpisode {
