@@ -1,4 +1,4 @@
-export enum WatchedEnum {
+export const enum WatchedEnum {
   kodiScrobble = 0,
   kodiSync = 1,
   checkIn = 2,
