@@ -1,5 +1,7 @@
+import { showId } from '../types';
+
 export interface Title {
-  id: string;
+  id: showId;
   name: string;
   followers: number;
   tvdbId: number;

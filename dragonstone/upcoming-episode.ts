@@ -1,6 +1,7 @@
 import { Episode } from './episode';
+import { showId } from '../types';
 
 export interface UpcomingEpisode {
-  showId: string;
+  showId: showId;
   episodes: Episode[];
 }

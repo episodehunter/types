@@ -1,4 +1,7 @@
+import { episodeId } from '../types';
+
 export interface Episode {
+  id: episodeId;
   aired: string;
   episode: number;
   episodeNumber: number;

@@ -1,3 +1,5 @@
+import { showId } from '../types';
+
 export interface Show {
   airs: {
     first?: string;
@@ -7,7 +9,7 @@ export interface Show {
   ended: boolean;
   genre: string[];
   ids: {
-    id: string;
+    id: showId;
     imdb?: string;
     tvdb: number;
   };

@@ -1,4 +1,6 @@
+import { showId } from '../types';
+
 export interface WhatToWatch {
-  showId: string;
+  showId: showId;
   numberOfEpisodesToWatch: number;
 }

@@ -1,5 +1,7 @@
+import { showId } from '../../types';
+
 export interface Event {
-  showId: string;
+  showId: showId;
   firstEpisode: number; // episodenumber
   lastEpisode: number; // episodenumber
   episodes: EpisodeInput[];
