@@ -1,2 +1,1 @@
-export type showId = number;
-export type episodeId = showId;
+export type ShowId = number;

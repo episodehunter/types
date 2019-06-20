@@ -1,7 +1,7 @@
-import { showId } from '../../types';
+import { ShowId } from '../../types';
 
 export interface Event {
-  showId: showId;
+  showId: ShowId;
   firstEpisode: number; // episodenumber
   lastEpisode: number; // episodenumber
   episodes: EpisodeInput[];
@@ -11,10 +11,8 @@ export interface Event {
 export type Response = Boolean;
 
 export interface EpisodeInput {
-  tvdbId: number;
   name: string;
-  season: number;
-  episode: number;
+  episodenumber: number;
   firstAired: string;
   overview?: string;
   lastupdated: number;

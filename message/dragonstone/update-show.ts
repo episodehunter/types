@@ -1,9 +1,9 @@
 import { Show } from '../../dragonstone/show';
 import { ShowInput } from './show-input';
-import { showId } from '../../types';
+import { ShowId } from '../../types';
 
 export interface Event {
-  showId: showId;
+  showId: ShowId;
   showInput: ShowInput;
   requestStack: string[];
 }

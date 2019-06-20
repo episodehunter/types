@@ -1,7 +1,7 @@
-import { showId } from '../../types';
+import { ShowId } from '../../types';
 
 export interface Event {
-  id: showId;
+  id: ShowId;
   tvdbId: number;
   lastupdated: number;
 }

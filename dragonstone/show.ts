@@ -1,23 +1,22 @@
-import { showId } from '../types';
+import { ShowId } from '../types';
 
 export interface Show {
   airs: {
-    first?: string;
-    time?: string;
-    day?: number;
+    first: string | null;
+    time: string | null;
+    day: number | null;
   };
   ended: boolean;
   genre: string[];
   ids: {
-    id: showId;
-    imdb?: string;
+    id: ShowId;
+    imdb: string | null;
     tvdb: number;
   };
-  language?: string;
+  language: string | null;
   lastupdated: number;
   name: string;
-  network?: string;
-  numberOfFollowers: number;
-  overview?: string;
+  network: string | null;
+  overview: string | null;
   runtime: number;
 }

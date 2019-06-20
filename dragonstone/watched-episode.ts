@@ -1,4 +1,4 @@
-import { showId } from '../types';
+import { ShowId } from '../types';
 
 export const enum WatchedEnum {
   kodiScrobble = 0,
@@ -9,21 +9,18 @@ export const enum WatchedEnum {
 }
 
 export interface WatchedEpisode {
-  episode: number;
-  episodeNumber: number;
-  season: number;
-  showId: showId;
-  time: Date;
+  episodenumber: number;
+  showId: ShowId;
+  time: number;
   type: WatchedEnum;
 }
 
 export interface WatchedEpisodeInput extends UnwatchedEpisodeInput {
-  time: Date;
+  time: number;
 }
 
 export interface UnwatchedEpisodeInput {
-  showId: showId;
-  season: number;
-  episode: number;
+  showId: ShowId;
+  episodenumber: number;
   type?: WatchedEnum;
 }

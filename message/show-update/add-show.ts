@@ -1,4 +1,4 @@
-import { showId } from '../../types';
+import { ShowId } from '../../types';
 
 export interface Event {
   theTvDbId: number;
@@ -6,5 +6,5 @@ export interface Event {
 }
 
 export interface Response {
-  id: showId;
+  id: ShowId;
 }
