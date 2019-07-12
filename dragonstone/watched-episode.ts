@@ -15,6 +15,13 @@ export interface WatchedEpisode {
   type: WatchedEnum;
 }
 
+export interface InternalWatchedEpisodeInput {
+  showId: ShowId;
+  episodenumber: number;
+  type?: WatchedEnum;
+  time: number;
+}
+
 export interface WatchedEpisodeInput extends UnwatchedEpisodeInput {
   time: number;
 }
@@ -22,5 +29,5 @@ export interface WatchedEpisodeInput extends UnwatchedEpisodeInput {
 export interface UnwatchedEpisodeInput {
   showId: ShowId;
   episodenumber: number;
-  type?: WatchedEnum;
+  type?: 'checkIn';
 }

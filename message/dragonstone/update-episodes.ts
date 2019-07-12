@@ -12,6 +12,7 @@ export type Response = Boolean;
 
 export interface EpisodeInput {
   name: string;
+  tvdbId: number;
   episodenumber: number;
   firstAired: string;
   overview?: string;
