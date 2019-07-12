@@ -17,7 +17,9 @@
   "homepage": "https://github.com/episodehunter/types#readme",
   "author": "Oskar Karlsson <kontakta@oskarkarlsson.nu>",
   "license": "MIT",
-  "devDependencies": {},
+  "devDependencies": {
+    "typescript": "^3.5.3"
+  },
   "dependencies": {},
   "prettier": {
     "singleQuote": true,
